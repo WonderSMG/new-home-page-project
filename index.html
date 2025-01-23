@@ -1,17 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/assets/favicon-32x32 proj-7.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="shortcut icon" href="/assets/" type="image/x-icon" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              softOrange: "hsl(35, 77%, 62%)",
+              softRed: "hsl(5, 85%, 63%)",
+              offWhite: "(36, 100%, 99%)",
+              grayishBlue: "(233, 8%, 79%)",
+              darkGrayishBlue: "hsl(236, 13%, 42%)",
+              veryDarkBlue: "(240, 100%, 5%)",
+            },
+            fontFamily: {
+              Inter: ['"Inter", serif'],
+            },
+          },
+        },
+      };
+    </script>
     <title>News || Page</title>
-</head>
-<body>
+  </head>
+  <body class="font-Inter">
     <!-- nav -->
-     <nav>
-        <div>
-            <img src="/assets/logo proj-7.svg" alt="design logo">
-        </div>
-     </nav>
-</body>
+    <nav
+      class="container mx-auto p-[20px] lg:py-[58px] lg:px-[140px] flex justify-between items-center"
+    >
+      <div>
+        <img src="/assets/logo proj-7.svg" alt="design logo" />
+      </div>
+      <!-- nav items -->
+      <ul class="hidden md:flex gap-12 font-[400] text-darkGrayishBlue">
+        <li class="hover:text-softRed cursor-pointer">Home</li>
+        <li class="hover:text-softRed cursor-pointer">New</li>
+        <li class="hover:text-softRed cursor-pointer">Popular</li>
+        <li class="hover:text-softRed cursor-pointer">Trending</li>
+        <li class="hover:text-softRed cursor-pointer">Categories</li>
+      </ul>
+      <!-- menu-img -->
+      <div class="md:hidden">
+        <img src="/assets/icon-menu proj-7.svg" alt="menu-icon" />
+      </div>
+    </nav>
+    <!-- main -->
+    <main class="container mx-auto p-[20px] lg:py-[58px] lg:px-[140px]">
+      <!-- main-section -->
+      <section class="lg:grid grid-cols-3 gap-12">
+        <!-- section-1 -->
+        <section class="col-span-2">
+          <!-- div-1 -->
+          <div>
+            <img
+              src="/assets/image-web-3-desktop proj-7.jpg"
+              alt="image-web-3-desktop"
+              class="hidden md:block"
+            />
+            <img
+              src="/assets/image-web-3-mobile proj-7.jpg"
+              alt="image-web-3-desktop"
+              class="md:hidden"
+            />
+          </div>
+          <!-- div-2 -->
+          <div class="lg:grid grid-cols-2">
+            <h1 class="font-[800] text-[36px] md:text-[50px]">The Bright Future of Web 3.0?</h1>
+            <div>
+              <p>
+                We dive into the next evolution of web that claims to put the
+                power of the platforms back into the hands of the people. But is
+                it really fulfilling its promise?
+              </p>
+              <button>READ MORE</button>
+            </div>
+          </div>
+        </section>
+        <!-- section-2 -->
+        <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est impedit dolore provident laboriosam vitae nemo autem labore adipisci, deleniti consequuntur, numquam porro minima veniam cumque, possimus ea tempore nostrum placeat quisquam minus quaerat ipsa magnam. Iste laudantium consectetur architecto aspernatur? Molestiae quidem id libero rem natus, dicta ab quis accusantium quas soluta aliquid sapiente fugit eius, alias vero laudantium et! Id incidunt numquam soluta accusamus perspiciatis quo officia. Velit eligendi dolorem ad impedit! Cupiditate ipsa dolorem saepe modi odio assumenda porro beatae quae eum minus aperiam iste officia rerum, amet repudiandae et quo error aut possimus provident dignissimos deserunt! Sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate veniam harum officiis ipsum vero laudantium amet illo perspiciatis esse eaque qui, fuga voluptas soluta similique minima blanditiis voluptatibus, magni autem excepturi ad tempore nesciunt? Consequuntur eum error neque optio quis quasi ex vel, illo praesentium eveniet mollitia, perferendis, accusantium architecto.</section>
+      </section>
+    </main>
+  </body>
 </html>
